@@ -6,9 +6,10 @@ metadata:
   name: api
   labels:
     app: api
+  namespace: cloudchamp    
 spec:
   selector:
-    app: api
+    role: api
   ports:
     - protocol: TCP
       port: 80

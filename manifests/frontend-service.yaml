@@ -6,9 +6,10 @@ metadata:
   name: frontend
   labels:
     app: frontend
+  namespace: cloudchamp    
 spec:
   selector:
-    app: frontend
+    role: frontend
   ports:
     - protocol: TCP
       port: 80
